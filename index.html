@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .solar{
+            height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-image: url(https://tse1.mm.bing.net/th?id=OIP.y7xZwyXf73GgJq4hQjrI9QHaE1&pid=Api&P=0&h=220);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .sun{
+            /* background-color: orange; */
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            border-color: orangered;
+            background-image: url(https://pics.clipartpng.com/midle/Sun_PNG_Clip_Art-3047.png);
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        .circle1{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 50%;
+            animation: rotateplanet 10s linear 0s infinite normal;
+            /* transform: skew(49deg,4deg); */
+        }
+        .mercury{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            /* background-color: red; */
+             position: absolute;
+            bottom:79px;
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b9/3D_Mercury.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .circle2{
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 50%;
+            animation: rotateplanet 20s linear 0s infinite normal;
+        }
+        .venus{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            /* background-color: red; */
+             position: absolute;
+             bottom: 97px;
+             left: 176px;
+             background-image: url(https://up.yimg.com/ib/th?id=OIP.5oyMQvU62j_Dzu5NpcuGKAHaHd&pid=Api&rs=1&c=1&qlt=95&w=119&h=120);
+             background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .circle3{
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 50%;
+            animation: rotateplanet 30s linear 0s infinite normal;
+        }
+        .earth{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            /* background-color: red; */
+             position: absolute;
+             bottom: 51px;
+            left: 259px;
+            background-image: url(https://freepngtransparent.com/wp-content/uploads/2022/12/earth-png-5.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .circle4{
+            border: 1px solid black;
+            height: 400px;
+            width: 400px;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 50%;
+            animation: rotateplanet 40s linear 0s infinite normal;
+        }
+        .mars{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: red;
+             position: absolute;
+             bottom: 300px;
+             left: 340px;
+             background-image: url(https://w7.pngwing.com/pngs/16/806/png-transparent-planet-mars-illustration-earth-terrestrial-planet-mars-solar-system-mars-sphere-venus-astronomical-object-thumbnail.png);
+             background-repeat: no-repeat;
+             background-size: cover;
+        }
+        .circle5{
+            border: 1px solid black;
+            height: 500px;
+            width: 500px;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 50%;
+            animation: rotateplanet 50s linear 0s infinite normal;
+        }
+        .jupiter{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            /* background-color: red; */
+             position: absolute;
+             bottom: 478px;
+             left: 196px;
+             background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzt574I814SqfJ-08juhgngT8Bz-Mx5QccnA&s);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .circle6{
+            border: 1px solid black;
+            height: 600px;
+            width: 600px;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 50%;
+            animation: rotateplanet 60s linear 0s infinite normal;
+        }
+        .saturn{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            /* background-color: red; */
+             position: absolute;
+             bottom: 397px;
+             left: 0px;
+             background-image: url(https://static.vecteezy.com/system/resources/previews/034/469/480/original/realistic-saturn-planet-ai-generative-png.png);
+             background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .circle7{
+            border: 1px solid black;
+            height: 700px;
+            width: 700px;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 50%;
+            animation: rotateplanet 70s linear 0s infinite normal;
+        }
+        .uranus{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            /* background-color: red; */
+             position: absolute;
+             bottom: 121px;
+            left: 36px;
+            background-image: url(https://png.pngtree.com/png-clipart/20220616/original/pngtree-planet-uranus-png-image_8072427.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .circle8{
+            border: 1px solid black;
+            height: 800px;
+            width: 800px;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 50%;
+            animation: rotateplanet 80s linear 0s infinite normal;
+        }
+        .neptune{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: red;
+             position: absolute;
+             bottom: 207px;
+             left: 743px;
+             background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLSOh7hL9XoP5QPLHqug9wTtue1t4iG8ulaA&s);
+             background-repeat: no-repeat;
+             background-size: cover;
+        } 
+
+        @keyframes rotateplanet{
+            from{
+
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="solar">
+
+     <div class="circle8">
+        <div class="neptune"></div>
+        <div class="circle7">
+            <div class="uranus"></div>
+            <div class="circle6">
+                <div class="saturn"></div>
+                <div class="circle5">
+                    <div class="jupiter"></div>
+                        <div class="circle4">
+                         <div class="mars"></div>
+                         <div class="circle3">
+                            <div class="earth"></div>
+                            <div class="circle2">
+                                <div class="venus"></div>
+                                <div class="circle1">
+                                    <div class="mercury"></div>
+                                    <div class="sun"></div>
+                                </div>
+                            </div>
+                         </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
